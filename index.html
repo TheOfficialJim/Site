@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="asset/style/mystyle.css">
 </head>
 <body>
@@ -9,6 +11,18 @@
 <h1>Hello, World!</h1>
 <p></p>
 
+<div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+    </div>
+    <button id="submitBtn">Subscribe</button>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js"></script>
 
 <script src="asset/script/scripts.js"></script>
 </body>
