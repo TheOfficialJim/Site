@@ -15,14 +15,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout code & Set up Node.js
         uses: actions/checkout@v4
-
-      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
-          path: node_modules
           cache: 'npm'
           cache-dependency-path: ${{ hashFiles('**/package-lock.json') }}
 
